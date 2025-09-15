@@ -39,16 +39,16 @@ export default function Navbar({ lang: initialLang = "es" as Lang }) {
         </nav>
         <div className="md:hidden flex items-center gap-2">
           <button onClick={flip} className="btn btn-outline">{lang.toUpperCase()}</button>
-          <button className="btn btn-outline" onClick={()=>setOpen(v=>!v)} aria-label="menu">☰</button>
+          <button className="btn btn-outline" onClick={() => setOpen(v => !v)} aria-label="menu">☰</button>
         </div>
       </div>
       {open && (
         <div className="md:hidden border-t border-[var(--line)] bg-white">
           <div className="container py-3 grid gap-3">
-            <a onClick={()=>setOpen(false)} href="#how">{t(lang,"nav.how")}</a>
-            <a onClick={()=>setOpen(false)} href="#benefits">{t(lang,"nav.benefits")}</a>
-            <a onClick={()=>setOpen(false)} href="#pricing">{t(lang,"nav.pricing")}</a>
-            <Link onClick={()=>setOpen(false)} href="/demo" className="btn btn-primary">{t(lang,"nav.demo")}</Link>
+            <a onClick={() => setOpen(false)} href="#how">{t(lang, "nav.how")}</a>
+            <a onClick={() => setOpen(false)} href="#benefits">{t(lang, "nav.benefits")}</a>
+            <a onClick={() => setOpen(false)} href="#pricing">{t(lang, "nav.pricing")}</a>
+            <Link onClick={() => setOpen(false)} href="/demo" className="btn btn-primary">{t(lang, "nav.demo")}</Link>
           </div>
         </div>
       )}

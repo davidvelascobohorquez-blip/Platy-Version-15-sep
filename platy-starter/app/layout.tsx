@@ -1,9 +1,8 @@
 import "./globals.css";
 import { Sora, Manrope } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
 
-const sora = Sora({ subsets: ["latin"], variable: "--font-head", weight: ["400","600","700","800"] });
-const manrope = Manrope({ subsets: ["latin"], variable: "--font-body", weight: ["400","500","600"] });
+const sora = Sora({ subsets: ["latin"], variable: "--font-head", weight: ["400", "600", "700", "800"] });
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-body", weight: ["400", "500", "600"] });
 
 export const metadata = {
   title: "platy",
@@ -14,7 +13,7 @@ export const metadata = {
   },
   openGraph: {
     title: "platy — Menús inteligentes, ahorro real",
-    images: ["/og.png"]
+    images: ["/og.jpg"]
   },
   manifest: "/manifest.webmanifest",
   themeColor: "#0F172A"
@@ -25,8 +24,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es">
       <body className={`${sora.variable} ${manrope.variable}`}>
         {children}
-        <Analytics />
       </body>
     </html>
   );
 }
+

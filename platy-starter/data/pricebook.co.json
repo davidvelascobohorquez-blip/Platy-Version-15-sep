@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "currency": "COP",
+    "unitBase": "kg/l/ud",
+    "version": "0.1"
+  },
+  "cityMultipliers": {
+    "Bogot\u00e1": 1.0,
+    "Medell\u00edn": 0.98,
+    "Cali": 0.99,
+    "Barranquilla": 1.02
+  },
+  "ingredients": {
+    "arroz": {
+      "unit": "kg",
+      "price": 5000
+    },
+    "pollo": {
+      "unit": "kg",
+      "price": 14000
+    },
+    "zanahoria": {
+      "unit": "kg",
+      "price": 3000
+    },
+    "cebolla": {
+      "unit": "kg",
+      "price": 3500
+    },
+    "pasta": {
+      "unit": "kg",
+      "price": 6000
+    },
+    "tomate": {
+      "unit": "kg",
+      "price": 4000
+    },
+    "queso": {
+      "unit": "kg",
+      "price": 22000
+    },
+    "arepa": {
+      "unit": "ud",
+      "price": 900
+    },
+    "huevo": {
+      "unit": "ud",
+      "price": 600
+    },
+    "lechuga": {
+      "unit": "kg",
+      "price": 5000
+    },
+    "atun": {
+      "unit": "kg",
+      "price": 28000
+    },
+    "papa": {
+      "unit": "kg",
+      "price": 2500
+    },
+    "lentejas": {
+      "unit": "kg",
+      "price": 7000
+    }
+  }
+}
